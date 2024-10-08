@@ -1,6 +1,9 @@
 MyGo Compiler Optimization
 ---
 
+First of all, it's mygo.
+![](images/its_my_go.png)
+
 ## Intro
 
 Compiler optimization strategies implemented in Go, working directly on Bril's intermediate representation (IR) for back-end optimizations without involving front-end syntax or semantic analysis. Runtime optimizations are also beyond the scope of this project.
