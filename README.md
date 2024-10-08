@@ -2,6 +2,7 @@ MyGo Compiler Optimization
 ---
 
 First of all, it's mygo.
+
 ![](images/its_my_go.png)
 
 ## Intro
@@ -35,13 +36,13 @@ Consider the following Bril code:
 ```=
 # examples/idchain.bril
 @main {
-x: int = const 4;
-jmp .label;
+  x: int = const 4;
+  jmp .label;
 .label:
-copy1: int = id x;
-copy2: int = id copy1;
-copy3: int = id copy2;
-print copy3;
+  copy1: int = id x;
+  copy2: int = id copy1;
+  copy3: int = id copy2;
+  print copy3;
 }
 ```
 
@@ -55,10 +56,10 @@ The output might be:
 
 ```=
 @main {
-x: int = const 4;
-jmp .label;
+  x: int = const 4;
+  jmp .label;
 .label:
-print x;
+  print x;
 }
 ```
 
